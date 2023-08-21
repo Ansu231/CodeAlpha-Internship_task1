@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multistep Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1> Student Survey Form</h1>
+        <div class="indicator">
+            <span class="line"><span></span></span>
+            <p class="active">1</p>
+            <p>2</p>
+            <p>3</p>
+        </div>
+        <form action="insertvalue.php" method="post">
+            <div class="tab show">
+                <p>Personal Info</p>
+                <div class="form">
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form">
+                    <input type="text" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div class="form">
+                    <input type="text" name="password" id="password" placeholder="Enter Your Password">
+                </div>
+                <div class="form">Dob
+                    <input type="date" name="dob" id="dob">
+                </div>
+                <div class="form">
+                    <textarea name="address" id="address" placeholder="Enter Your Address"></textarea>
+                </div>
+            </div>
+            <div class="tab">
+                <p>College Info</p>
+                <div class="form">
+                    <input type="text" name="college" id="college" placeholder="Enter Your college">
+                </div>
+                <div class="form">
+                    <input type="text" name="course" id="course" placeholder="Enter Your Course">
+                </div>
+                <div class="form">
+                    <input type="text" name="branch" id="branch" placeholder="Enter Your Branch">
+                </div>
+                <div class="form">
+                    <input type="text" name="department" id="department" placeholder="Department eg.nursing/engineering">
+                </div>
+                <div class="form">
+                    <input type="text" name="education" id="education" placeholder="education level eg.UG/PG">
+                </div>
+                
+            </div>
+            <div class="tab">
+                <p>Internship Info</p>
+                <div class="form">
+                    <input type="number" name="internship" id="internship" placeholder="Number of Internship">
+                </div>
+                <div class="form">
+                    <input type="text" name="role" id="role" placeholder="Role in Internship">
+                </div>
+                <div class="form">
+                    <input type="text" name="company" id="company" placeholder="company name of Internship">
+                </div>
+                <div class="form">
+                    <input type="number" name="weeks" id="weeks" placeholder="weeks of Internship">
+                </div>
+                <div class="form">
+                    <textarea name="experience" id="experience" placeholder="Enter Your experience"></textarea>
+                </div>
+            </div>
+            <div class="btn">
+                <button type="button" class="prev" name="btn">Previous</button>
+                <button type="button" class="next" name="btn">Next</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
